@@ -1,0 +1,10 @@
+<resources>
+    <string name="apprater_accept">Rate</string>
+    <string name="apprater_description">Your rating is important to us, thank you for your support.</string>
+    <string name="apprater_later">Later</string>
+    <string name="apprater_never">Never</string>
+    <string name="apprater_rating_thanks">Thank you for your rating.</string>
+    <string name="apprater_title">Thank you for using the app</string>
+    <string name="error_network">Could not make the connection. Please check your internet connection.</string>
+
+</resources>

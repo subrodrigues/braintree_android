@@ -3,21 +3,28 @@ apply plugin: 'com.android.library'
 def paypalVersion = 'PayPalAndroidSDK-2.9.11.jar'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
 
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode rootProject.ext.versionCode
-        versionName rootProject.ext.versionName
-        testInstrumentationRunner 'com.braintreepayments.testutils.ui.NoAnimationsInstrumentationTestRunner'
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode = 28
+        versionName = '1.6.5-SNAPSHOT'
     }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
+}
+
+ext {
+    compileSdkVersion = 22
+    buildToolsVersion = "22.2.0"
+
+    minSdkVersion = 14
+    targetSdkVersion = 22
 }
 
 configurations {
@@ -123,6 +130,7 @@ artifacts {
 
 uploadArchives {
     repositories {
+        apply plugin: 'maven'
         mavenDeployer {
             pom.setArtifactId 'braintree-api'
 

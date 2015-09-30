@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BraintreeApi/BraintreeApi.iml" filepath="$PROJECT_DIR$/../BraintreeApi/BraintreeApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BraintreeData/BraintreeData.iml" filepath="$PROJECT_DIR$/../BraintreeData/BraintreeData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Demo/Demo.iml" filepath="$PROJECT_DIR$/../Demo/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Drop-In.iml" filepath="$PROJECT_DIR$/Drop-In.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FakeWallet/FakeWallet.iml" filepath="$PROJECT_DIR$/../FakeWallet/FakeWallet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lint/Lint.iml" filepath="$PROJECT_DIR$/../Lint/Lint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TestUtils/TestUtils.iml" filepath="$PROJECT_DIR$/../TestUtils/TestUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../braintree_android.iml" filepath="$PROJECT_DIR$/../braintree_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tools/tools.iml" filepath="$PROJECT_DIR$/../tools/tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../utils/utils.iml" filepath="$PROJECT_DIR$/../utils/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../views/views.iml" filepath="$PROJECT_DIR$/../views/views.iml" />
+    </modules>
+  </component>
+</project>

@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/bt_payment_method_button_height"
     android:orientation="horizontal"
-    android:weightSum="3"
-    android:background="@color/bt_white" >
+    android:weightSum="3">
 
     <ImageButton
         style="@style/bt_payment_method_app_switch_button"
         android:id="@+id/bt_paypal_button"
+        android:background="@drawable/grey_select_button_background"
         android:src="@drawable/bt_logo_paypal"
         android:contentDescription="@string/bt_pay_with_paypal" />
 

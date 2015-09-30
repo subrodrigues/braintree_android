@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">utils</string>
+    <string name="whatsapp_not_installed">The WhatsApp is not installed.</string>
+</resources>

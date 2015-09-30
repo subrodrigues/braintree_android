@@ -18,4 +18,11 @@
 
     <!-- overwritten in values-w500dp/dimens.xml -->
     <dimen name="bt_full_width" tools:ignore="ReferenceType">@integer/bt_match_parent</dimen>
+
+    <dimen name="login_vertical_margin">10dp</dimen>
+    <dimen name="login_horizontal_margin">20dp</dimen>
+
+    <dimen name="status_bar_height">0dp</dimen>
+
+
 </resources>

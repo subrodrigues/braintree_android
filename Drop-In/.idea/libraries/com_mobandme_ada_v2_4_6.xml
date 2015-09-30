@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.mobandme.ada_v2.4.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../tools/libs/com.mobandme.ada_v2.4.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

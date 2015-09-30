@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="common-23.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/23.2.2/96480781aed8995b6ad5241b5ab550664d81dc5a/common-23.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/23.2.2/9c6b9a8fa5013c3dbf38a2c6e484f8f70820b7e4/common-23.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

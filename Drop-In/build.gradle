@@ -1,15 +1,14 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
 
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode rootProject.ext.versionCode
-        versionName rootProject.ext.versionName
-        testInstrumentationRunner 'com.braintreepayments.testutils.ui.NoAnimationsInstrumentationTestRunner'
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode = 28
+        versionName = '1.6.5-SNAPSHOT'
     }
 
     compileOptions {
@@ -18,12 +17,25 @@ android {
     }
 }
 
+ext {
+    compileSdkVersion = 22
+    buildToolsVersion = "22.2.0"
+
+    minSdkVersion = 14
+    targetSdkVersion = 22
+}
+
 dependencies {
     compile 'com.braintreepayments:card-form:2.0.1'
     compile project(':BraintreeApi')
     compile 'com.google.android.gms:play-services-wallet:[7.5.0,8.0.0)'
 
     androidTestCompile project(':TestUtils')
+    compile(project(':TPFrameworkViews')) {
+        transitive = false
+    }
+    compile project(':TPFrameworkTools')
+    compile project(':TPFrameworkUtils')
 }
 
 task grantAnimationPermission(type: Exec, dependsOn: 'installDebugAndroidTest') {
@@ -57,26 +69,3 @@ artifacts {
     archives sourcesJar
 }
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            pom.setArtifactId 'braintree'
-
-            pom.project {
-                name 'braintree'
-                groupId = 'com.braintreepayments.api'
-                version = "${android.defaultConfig.versionName}"
-                packaging 'aar'
-                description 'Drop-in payment form for Braintree\'s v.zero SDK. Integrate this library to add a readymade UI for your payments.'
-            }
-
-            pom.whenConfigured { MavenPom pom ->
-                pom.dependencies.each {
-                    if (it.artifactId == 'play-services-wallet') {
-                        it.optional = true
-                    }
-                }
-            }
-        }
-    }
-}

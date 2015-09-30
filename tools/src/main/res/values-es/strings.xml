@@ -1,0 +1,10 @@
+<resources>
+    <string name="apprater_accept">Valorar</string>
+    <string name="apprater_description">Su voto es importante para nosotros, gracias por su apoyo.</string>
+    <string name="apprater_later">Más tarde</string>
+    <string name="apprater_never">Nunca</string>
+    <string name="apprater_rating_thanks">Gracias por tu valoración.</string>
+    <string name="apprater_title">Gracias por usar la aplicación</string>
+    <string name="error_network">No se pudo realizar la conexión. Por favor, compruebe su conexión a Internet.</string>
+
+</resources>

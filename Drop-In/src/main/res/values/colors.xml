@@ -9,4 +9,12 @@
     <color name="bt_paypal_button_background">#009BDE</color>
     <color name="bt_paypal_button_background_pressed">#0C8DC4</color>
     <color name="bt_border_color">#99999A</color>
+
+    <color name="gngPink">#e31937</color>
+    <color name="signup_divider_color">#808080</color>
+    <color name="primary">#ffffff</color>
+    <color name="primaryDarker">#D1D1D1</color>
+    <color name="colorAccent">#000000</color>
+    <color name="divider_color">#a0a0a0</color>
+
 </resources>

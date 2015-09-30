@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- TPAppRater -->
+    <string name="apprater_title">Obrigado por utilizar a app</string>
+    <string name="apprater_description">A sua classificação é importante para nós, agradecemos desde já o seu apoio.</string>
+    <string name="apprater_rating_thanks">Obrigado pela sua classificação.</string>
+    <string name="apprater_accept">Avaliar</string>
+    <string name="apprater_later">Mais tarde</string>
+    <string name="apprater_never">Nunca</string>
+</resources>

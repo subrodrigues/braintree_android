@@ -1,11 +1,58 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="Overdraw"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bt_base_background"
+    android:background="@android:color/white"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_dropin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/status_bar_height"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:tint="@color/bt_black"
+            android:layout_gravity="left"/>
+
+        <pt.thingpink.views.TPFontableTextView
+            android:id="@+id/action_bar_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="@android:style/TextAppearance.Theme"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:text="@string/bt_default_submit_button_text"
+            app:font="Gotham-Medium.otf"
+            app:uppercase="true" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/look_top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/toolbar_dropin"
+        android:background="@color/divider_color" />
+
+    <View
+        android:id="@+id/status_bar_dummy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:alpha="0"
+        android:background="@color/primary" />
 
     <ViewStub
         style="@style/bt_main_view_controller_container"

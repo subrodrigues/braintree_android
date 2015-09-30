@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.thingpink.utils">
+
+
+    <meta-data
+        android:name="pt.thingpink.utils.GlideConfiguration"
+        android:value="GlideModule" />
+</manifest>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Lint.Lint">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Lint/build/libs/Lint.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

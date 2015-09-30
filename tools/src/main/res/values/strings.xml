@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="error_network">Não foi possível fazer a ligação. Por favor verifique a ligação à internet.</string>
+    <string name="facebook_not_initialized" translatable="false">The Facebook Helper was not initialized.</string>
+
+</resources>

@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <resources>
     <string name="bt_form_pay_with_card_header">PAGAR COM UM CART&#xC3;O</string>
+    <string name="bt_form_pay_with_paypal_header">PAGAR COM PAYPAL</string>
+
 
     <string name="bt_invalid_card">As informa&#xE7;&#xF5;es do cart&#xE3;o s&#xE3;o inv&#xE1;lidas</string>
 

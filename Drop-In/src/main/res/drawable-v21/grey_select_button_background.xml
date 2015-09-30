@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+        <layer-list>
+
+            <item>
+
+                <ripple android:color="@color/gngPink">
+
+                    <item>
+                        <shape
+                            android:shape="rectangle">
+                            <solid android:color="@color/bt_very_light_gray" />
+                        </shape>
+                    </item>
+
+                </ripple>
+
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

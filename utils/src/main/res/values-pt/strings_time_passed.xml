@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="time_passed_year">ano atrás</string>
+    <string name="time_passed_years">anos atrás</string>
+    <string name="time_passed_month">mês atrás</string>
+    <string name="time_passed_months">meses atrás</string>
+    <string name="time_passed_week">semana atrás</string>
+    <string name="time_passed_weeks">semanas atrás</string>
+    <string name="time_passed_day">dia atrás</string>
+    <string name="time_passed_days">dias atrás</string>
+    <string name="time_passed_hour">hora atrás</string>
+    <string name="time_passed_hours">horas atrás</string>
+    <string name="time_passed_minute">minuto atrás</string>
+    <string name="time_passed_minutes">minutos atrás</string>
+    <string name="time_passed_second">segundo atrás</string>
+    <string name="time_passed_seconds">segundos atrás</string>
+    <string name="just_now">Agora</string>
+
+</resources>

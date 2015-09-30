@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="bt_form_pay_with_paypal_header">Pay With PayPal</string>
+
     <string name="bt_form_pay_with_card_header">Pay With a Card</string>
 
     <string name="bt_invalid_card">Card information is invalid</string>

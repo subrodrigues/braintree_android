@@ -7,9 +7,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -46,7 +49,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * {@link android.app.Activity} encompassing Braintree's Drop-In UI.
  */
-public class BraintreePaymentActivity extends Activity implements
+public class BraintreePaymentActivity extends ActionBarActivity implements
         BraintreeSetupFinishedListener, PaymentMethodsUpdatedListener, PaymentMethodCreatedListener,
         ErrorListener {
 
@@ -120,6 +123,7 @@ public class BraintreePaymentActivity extends Activity implements
 
         mSavedInstanceState = (savedInstanceState != null) ? savedInstanceState : new Bundle();
         mCustomization = getCustomization();
+
         customizeActionBar();
 
         mBraintree = Braintree.restoreSavedInstanceState(this, mSavedInstanceState);

@@ -1,11 +1,13 @@
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
-
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- tablet version included in layout-w500dp/ dir -->
-    <Button
+    <pt.thingpink.views.TPFontableButton
         android:id="@+id/bt_card_form_submit_button"
         style="@style/bt_submit_button"
         android:layout_alignParentBottom="true"
-        android:background="@color/bt_button_disabled_color" />
+        android:textColor="@color/bt_white"
+        app:font="Gotham-Medium.otf"
+        android:background="@drawable/select_button_background" />
 
 </merge>
 

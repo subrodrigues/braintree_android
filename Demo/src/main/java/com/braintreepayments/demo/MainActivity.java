@@ -115,18 +115,12 @@ public class MainActivity extends Activity implements PaymentMethodCreatedListen
 
     public void launchDropIn(View v) {
         Customization customization = new CustomizationBuilder()
-                .primaryDescription(getString(R.string.cart))
-                .secondaryDescription("1 Item")
-                .amount("$1.00")
                 .submitButtonText(getString(R.string.buy))
                 .build();
 
         Intent intent = new Intent(this, BraintreePaymentActivity.class)
                 .putExtra(BraintreePaymentActivity.EXTRA_CLIENT_TOKEN, mClientToken)
-                .putExtra(BraintreePaymentActivity.EXTRA_CUSTOMIZATION, customization)
-                .putExtra(BraintreePaymentActivity.EXTRA_ANDROID_PAY_CART, getAndroidPayCart())
-                .putExtra(BraintreePaymentActivity.EXTRA_ANDROID_PAY_IS_BILLING_AGREEMENT,
-                        Settings.isAndroidPayBillingAgreement(this));
+                .putExtra(BraintreePaymentActivity.EXTRA_CUSTOMIZATION, customization);
 
         startActivityForResult(intent, DROP_IN_REQUEST);
     }
