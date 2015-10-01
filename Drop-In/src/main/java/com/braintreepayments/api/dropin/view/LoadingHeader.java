@@ -72,7 +72,7 @@ public class LoadingHeader extends RelativeLayout {
         mLoadingSpinner.setVisibility(GONE);
         mHeaderMessage.setVisibility(GONE);
 
-        setBackgroundColor(getResources().getColor(R.color.bt_blue));
+        setBackgroundColor(getResources().getColor(R.color.gngPink));
         mStatusIcon.setImageResource(R.drawable.bt_success);
         mStatusIcon.setVisibility(VISIBLE);
 

@@ -1,5 +1,6 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         tools:ignore="ContentDescription"
@@ -11,7 +12,7 @@
         android:layout_marginStart="@dimen/bt_payment_method_item_padding"
         android:layout_height="@dimen/bt_default_item_height" />
 
-    <TextView
+    <pt.thingpink.views.TPFontableTextView
         style="@style/bt_base_textview_bold"
         android:id="@+id/bt_payment_method_type"
         android:layout_width="wrap_content"
@@ -21,9 +22,10 @@
         android:layout_toEndOf="@id/bt_payment_method_icon"
         android:layout_marginLeft="@dimen/bt_payment_method_item_padding"
         android:layout_marginStart="@dimen/bt_payment_method_item_padding"
+        app:font="Gotham-Bold.otf"
         android:textColor="@color/bt_black" />
 
-    <TextView
+    <pt.thingpink.views.TPFontableTextView
         style="@style/bt_base_textview"
         android:id="@+id/bt_payment_method_description"
         android:layout_width="wrap_content"
@@ -35,6 +37,7 @@
         android:layout_marginRight="@dimen/bt_payment_method_item_padding"
         android:maxLines="1"
         android:ellipsize="middle"
+        app:font="Gotham-Light.otf"
         android:textColor="@color/bt_black" />
 
 </merge>

@@ -9,7 +9,7 @@
     <string name="bt_choose_payment_method">Escolher meio de pagamento</string>
     <string name="bt_change_payment_method">Alterar meio de pagamento</string>
     <string name="bt_add_new_payment_method">Adicionar novo meio de pagamento</string>
-    <string name="bt_add_payment_method">Adicionar meio de pagamento</string>
+    <string name="bt_add_payment_method">Alterar meio de pagamento</string>
 
     <string name="bt_default_submit_button_text">COMPRAR</string>
     <string name="bt_default_action_bar_text">Comprar</string>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_form_root"
+    android:background="@color/bt_white"
     android:layout_height="wrap_content"
     android:layout_width="match_parent">
 
@@ -32,28 +33,26 @@
             <include layout="@layout/bt_payment_description" />
 
             <View
-                android:layout_width="wrap_content"
-                android:layout_height="14dp" />
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/signup_divider_color" />
 
             <pt.thingpink.views.TPFontableTextView
                 style="@style/bt_base_textview_bold"
                 android:id="@+id/bt_card_form_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="@dimen/login_horizontal_margin"
-                android:layout_marginRight="@dimen/login_horizontal_margin"
-                android:layout_marginBottom="@dimen/login_vertical_margin"
-                android:textColor="@color/gngPink"
                 android:text="@string/bt_form_pay_with_card_header"
-                app:font="Gotham-Medium.otf"/>
+                android:textColor="@color/gngPink"
+                android:textAllCaps="true"
+                app:font="Gotham-Bold.otf"
+                android:layout_below="@+id/second_divider"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/my_gng_vouchers_grey_background">
+            </pt.thingpink.views.TPFontableTextView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="@dimen/login_horizontal_margin"
-                android:layout_marginRight="@dimen/login_horizontal_margin"
-                android:background="@color/signup_divider_color" />
 
             <com.braintreepayments.cardform.view.CardForm
                 android:id="@+id/bt_card_form"
@@ -69,24 +68,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="14dp" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/signup_divider_color" />
+
             <pt.thingpink.views.TPFontableTextView
                 style="@style/bt_base_textview_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="@dimen/login_horizontal_margin"
-                android:layout_marginRight="@dimen/login_horizontal_margin"
-                android:layout_marginBottom="@dimen/login_horizontal_margin"
-                android:textColor="@color/gngPink"
                 android:text="@string/bt_form_pay_with_paypal_header"
-                app:font="Gotham-Medium.otf"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="@dimen/login_horizontal_margin"
-                android:layout_marginRight="@dimen/login_horizontal_margin"
-                android:background="@color/signup_divider_color" />
+                android:textColor="@color/gngPink"
+                android:textAllCaps="true"
+                app:font="Gotham-Bold.otf"
+                android:layout_below="@+id/second_divider"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/my_gng_vouchers_grey_background">
+            </pt.thingpink.views.TPFontableTextView>
 
             <com.braintreepayments.api.dropin.view.PaymentButton
                 android:id="@+id/bt_payment_button"
